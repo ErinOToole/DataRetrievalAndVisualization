@@ -1,0 +1,1331 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook original-version='18.1' source-build='2020.3.1 (20203.20.0918.1727)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sales of Alcoholic Beverages (Sales of Alcoholic Beverages by Volume)' inline='true' name='federated.001wvgi1ab89oz1gi9lre0lr3a8w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sales of Alcoholic Beverages by Volume' name='excel-direct.0japbyb0h9kpfx178m94b1ei34zl'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/erbea/OneDrive/Desktop/Project/Sales of Alcoholic Beverages by Volume.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Life Expectancy at Birth, by Sex' name='excel-direct.1s0e7xa0avr80s1f6vnz21bluxib'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/erbea/OneDrive/Desktop/Project/Life Expectancy at Birth, by Sex.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1s0e7xa0avr80s1f6vnz21bluxib' name='Life Expectancy at Birth, by Se' table='[&apos;Life Expectancy at Birth, by Se$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q11179:no:A1:Q11179:0' header='yes' outcome='6'>
+            <column datatype='string' date-parse-format='MMddHH/yyyy' name='REF_DATE' ordinal='0' />
+            <column datatype='string' name='GEO' ordinal='1' />
+            <column datatype='string' name='DGUID' ordinal='2' />
+            <column datatype='string' name='Selected causes of death' ordinal='3' />
+            <column datatype='string' name='Sex' ordinal='4' />
+            <column datatype='string' name='Change in life expectancy' ordinal='5' />
+            <column datatype='string' name='UOM' ordinal='6' />
+            <column datatype='integer' name='UOM_ID' ordinal='7' />
+            <column datatype='string' name='SCALAR_FACTOR' ordinal='8' />
+            <column datatype='integer' name='SCALAR_ID' ordinal='9' />
+            <column datatype='string' name='VECTOR' ordinal='10' />
+            <column datatype='string' name='COORDINATE' ordinal='11' />
+            <column datatype='real' name='VALUE' ordinal='12' />
+            <column datatype='string' name='STATUS' ordinal='13' />
+            <column datatype='string' name='SYMBOL' ordinal='14' />
+            <column datatype='string' name='TERMINATED' ordinal='15' />
+            <column datatype='integer' name='DECIMALS' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0japbyb0h9kpfx178m94b1ei34zl' name='Sales of Alcoholic Beverages' table='[&apos;Sales of Alcoholic Beverages$&apos;]' type='table'>
+            <columns gridOrigin='A1:P2713:no:A1:P2713:0' header='yes' outcome='6'>
+              <column datatype='date' date-parse-format='yyyy' name='REF_DATE' ordinal='0' />
+              <column datatype='string' name='GEO' ordinal='1' />
+              <column datatype='string' name='DGUID' ordinal='2' />
+              <column datatype='string' name='Type of sales' ordinal='3' />
+              <column datatype='string' name='Type of beverage' ordinal='4' />
+              <column datatype='string' name='UOM' ordinal='5' />
+              <column datatype='integer' name='UOM_ID' ordinal='6' />
+              <column datatype='string' name='SCALAR_FACTOR' ordinal='7' />
+              <column datatype='integer' name='SCALAR_ID' ordinal='8' />
+              <column datatype='string' name='VECTOR' ordinal='9' />
+              <column datatype='string' name='COORDINATE' ordinal='10' />
+              <column datatype='real' name='VALUE' ordinal='11' />
+              <column datatype='string' name='STATUS' ordinal='12' />
+              <column datatype='string' name='SYMBOL' ordinal='13' />
+              <column datatype='string' name='TERMINATED' ordinal='14' />
+              <column datatype='integer' name='DECIMALS' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1s0e7xa0avr80s1f6vnz21bluxib' name='Life Expectancy at Birth, by Se' table='[&apos;Life Expectancy at Birth, by Se$&apos;]' type='table'>
+            <columns gridOrigin='A1:Q11179:no:A1:Q11179:0' header='yes' outcome='6'>
+              <column datatype='string' date-parse-format='MMddHH/yyyy' name='REF_DATE' ordinal='0' />
+              <column datatype='string' name='GEO' ordinal='1' />
+              <column datatype='string' name='DGUID' ordinal='2' />
+              <column datatype='string' name='Selected causes of death' ordinal='3' />
+              <column datatype='string' name='Sex' ordinal='4' />
+              <column datatype='string' name='Change in life expectancy' ordinal='5' />
+              <column datatype='string' name='UOM' ordinal='6' />
+              <column datatype='integer' name='UOM_ID' ordinal='7' />
+              <column datatype='string' name='SCALAR_FACTOR' ordinal='8' />
+              <column datatype='integer' name='SCALAR_ID' ordinal='9' />
+              <column datatype='string' name='VECTOR' ordinal='10' />
+              <column datatype='string' name='COORDINATE' ordinal='11' />
+              <column datatype='real' name='VALUE' ordinal='12' />
+              <column datatype='string' name='STATUS' ordinal='13' />
+              <column datatype='string' name='SYMBOL' ordinal='14' />
+              <column datatype='string' name='TERMINATED' ordinal='15' />
+              <column datatype='integer' name='DECIMALS' ordinal='16' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[COORDINATE (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[COORDINATE]' />
+          <map key='[COORDINATE]' value='[Sales of Alcoholic Beverages].[COORDINATE]' />
+          <map key='[Change in life expectancy]' value='[Life Expectancy at Birth, by Se].[Change in life expectancy]' />
+          <map key='[DECIMALS (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[DECIMALS]' />
+          <map key='[DECIMALS]' value='[Sales of Alcoholic Beverages].[DECIMALS]' />
+          <map key='[DGUID (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[DGUID]' />
+          <map key='[DGUID]' value='[Sales of Alcoholic Beverages].[DGUID]' />
+          <map key='[GEO (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[GEO]' />
+          <map key='[GEO]' value='[Sales of Alcoholic Beverages].[GEO]' />
+          <map key='[REF_DATE (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[REF_DATE]' />
+          <map key='[REF_DATE]' value='[Sales of Alcoholic Beverages].[REF_DATE]' />
+          <map key='[SCALAR_FACTOR (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[SCALAR_FACTOR]' />
+          <map key='[SCALAR_FACTOR]' value='[Sales of Alcoholic Beverages].[SCALAR_FACTOR]' />
+          <map key='[SCALAR_ID (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[SCALAR_ID]' />
+          <map key='[SCALAR_ID]' value='[Sales of Alcoholic Beverages].[SCALAR_ID]' />
+          <map key='[STATUS (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[STATUS]' />
+          <map key='[STATUS]' value='[Sales of Alcoholic Beverages].[STATUS]' />
+          <map key='[SYMBOL (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[SYMBOL]' />
+          <map key='[SYMBOL]' value='[Sales of Alcoholic Beverages].[SYMBOL]' />
+          <map key='[Selected causes of death]' value='[Life Expectancy at Birth, by Se].[Selected causes of death]' />
+          <map key='[Sex]' value='[Life Expectancy at Birth, by Se].[Sex]' />
+          <map key='[TERMINATED (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[TERMINATED]' />
+          <map key='[TERMINATED]' value='[Sales of Alcoholic Beverages].[TERMINATED]' />
+          <map key='[Type of beverage]' value='[Sales of Alcoholic Beverages].[Type of beverage]' />
+          <map key='[Type of sales]' value='[Sales of Alcoholic Beverages].[Type of sales]' />
+          <map key='[UOM (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[UOM]' />
+          <map key='[UOM]' value='[Sales of Alcoholic Beverages].[UOM]' />
+          <map key='[UOM_ID (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[UOM_ID]' />
+          <map key='[UOM_ID]' value='[Sales of Alcoholic Beverages].[UOM_ID]' />
+          <map key='[VALUE (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[VALUE]' />
+          <map key='[VALUE]' value='[Sales of Alcoholic Beverages].[VALUE]' />
+          <map key='[VECTOR (Life Expectancy at Birth, by Se)]' value='[Life Expectancy at Birth, by Se].[VECTOR]' />
+          <map key='[VECTOR]' value='[Sales of Alcoholic Beverages].[VECTOR]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P2713:no:A1:P2713:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q11179:no:A1:Q11179:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REF_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[REF_DATE]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>REF_DATE</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GEO]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>GEO</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DGUID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DGUID]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>DGUID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of sales</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type of sales]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>Type of sales</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of beverage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type of beverage]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>Type of beverage</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UOM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[UOM]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>UOM</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UOM_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[UOM_ID]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>UOM_ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCALAR_FACTOR</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SCALAR_FACTOR]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>SCALAR_FACTOR</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCALAR_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SCALAR_ID]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>SCALAR_ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VECTOR</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[VECTOR]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>VECTOR</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COORDINATE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COORDINATE]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>COORDINATE</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VALUE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VALUE]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>VALUE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATUS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[STATUS]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>STATUS</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SYMBOL</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SYMBOL]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>SYMBOL</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TERMINATED</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TERMINATED]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>TERMINATED</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DECIMALS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DECIMALS]</local-name>
+            <parent-name>[Sales of Alcoholic Beverages]</parent-name>
+            <remote-alias>DECIMALS</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REF_DATE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[REF_DATE (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>REF_DATE</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GEO (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>GEO</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DGUID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DGUID (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>DGUID</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Selected causes of death</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Selected causes of death]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>Selected causes of death</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Change in life expectancy</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Change in life expectancy]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>Change in life expectancy</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UOM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[UOM (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>UOM</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UOM_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[UOM_ID (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>UOM_ID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCALAR_FACTOR</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SCALAR_FACTOR (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>SCALAR_FACTOR</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCALAR_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SCALAR_ID (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>SCALAR_ID</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VECTOR</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[VECTOR (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>VECTOR</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COORDINATE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COORDINATE (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>COORDINATE</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VALUE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VALUE (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>VALUE</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATUS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[STATUS (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>STATUS</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SYMBOL</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SYMBOL (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>SYMBOL</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TERMINATED</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TERMINATED (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>TERMINATED</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DECIMALS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DECIMALS (Life Expectancy at Birth, by Se)]</local-name>
+            <parent-name>[Life Expectancy at Birth, by Se]</parent-name>
+            <remote-alias>DECIMALS</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' hidden='true' name='[COORDINATE (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column caption='Coordinate' datatype='string' hidden='true' name='[COORDINATE]' role='dimension' type='nominal' />
+      <column caption='Provinces - Life Expectancy' datatype='string' name='[Calculation_920704687716417539]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [GEO (Life Expectancy at Birth, by Se) Set] THEN [GEO (Life Expectancy at Birth, by Se)]&#13;&#10;ELSE &apos;Northwest Territories with Nunavut&apos; END' />
+      </column>
+      <column caption='Period of Change' datatype='string' name='[Change in life expectancy]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[DECIMALS (Life Expectancy at Birth, by Se)]' role='measure' type='quantitative' />
+      <column caption='Decimals' datatype='integer' hidden='true' name='[DECIMALS]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[DGUID (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column caption='Dguid' datatype='string' hidden='true' name='[DGUID]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[GEO (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column caption='Provinces - Alcoholic Bevarage Sales' datatype='string' name='[GEO]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='string' name='[REF_DATE (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[REF_DATE]' role='dimension' type='quantitative' />
+      <column caption='SCALAR FACTOR (Life Expectancy at Birth, by Se)' datatype='string' hidden='true' name='[SCALAR_FACTOR (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column caption='Scalar Factor' datatype='string' name='[SCALAR_FACTOR]' role='dimension' type='nominal' />
+      <column caption='SCALAR ID (Life Expectancy at Birth, by Se)' datatype='integer' hidden='true' name='[SCALAR_ID (Life Expectancy at Birth, by Se)]' role='dimension' type='ordinal' />
+      <column caption='Scalar Id' datatype='integer' hidden='true' name='[SCALAR_ID]' role='dimension' type='ordinal' />
+      <column datatype='string' hidden='true' name='[STATUS (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column caption='Status' datatype='string' hidden='true' name='[STATUS]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[SYMBOL (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column caption='Symbol' datatype='string' hidden='true' name='[SYMBOL]' role='dimension' type='nominal' />
+      <column caption='Cause of Death' datatype='string' name='[Selected causes of death]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[TERMINATED (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column caption='Terminated' datatype='string' hidden='true' name='[TERMINATED]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[UOM (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[UOM]' role='dimension' type='nominal' />
+      <column caption='UOM ID (Life Expectancy at Birth, by Se)' datatype='integer' hidden='true' name='[UOM_ID (Life Expectancy at Birth, by Se)]' role='dimension' type='ordinal' />
+      <column caption='Uom Id' datatype='integer' hidden='true' name='[UOM_ID]' role='dimension' type='ordinal' />
+      <column caption='Change in Life Expectancy at Birth' datatype='real' name='[VALUE (Life Expectancy at Birth, by Se)]' role='measure' type='quantitative' />
+      <column caption='Value' datatype='real' name='[VALUE]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[VECTOR (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+      <column caption='Vector' datatype='string' hidden='true' name='[VECTOR]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Life Expectancy at Birth, by Se' datatype='table' name='[__tableau_internal_object_id__].[Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sales of Alcoholic Beverages' datatype='table' name='[__tableau_internal_object_id__].[Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A]' role='measure' type='quantitative' />
+      <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+      <group caption='Regular Provinces' name='[GEO (Life Expectancy at Birth, by Se) Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter from='&quot;Alberta&quot;' function='range' level='[GEO (Life Expectancy at Birth, by Se)]' to='&quot;Newfoundland and Labrador&quot;' />
+          <groupfilter function='member' level='[GEO (Life Expectancy at Birth, by Se)]' member='&quot;Nova Scotia&quot;' />
+          <groupfilter from='&quot;Ontario&quot;' function='range' level='[GEO (Life Expectancy at Birth, by Se)]' to='&quot;Yukon&quot;' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:GEO:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Prince Edward Island&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alberta&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Newfoundland and Labrador&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Quebec&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Northwest Territories including Nunavut&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;British Columbia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Nova Scotia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Saskatchewan&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ontario&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Manitoba&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Yukon&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;New Brunswick&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Life Expectancy at Birth, by Se' id='Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC'>
+            <properties context=''>
+              <relation connection='excel-direct.1s0e7xa0avr80s1f6vnz21bluxib' name='Life Expectancy at Birth, by Se' table='[&apos;Life Expectancy at Birth, by Se$&apos;]' type='table'>
+                <columns gridOrigin='A1:Q11179:no:A1:Q11179:0' header='yes' outcome='6'>
+                  <column datatype='string' date-parse-format='MMddHH/yyyy' name='REF_DATE' ordinal='0' />
+                  <column datatype='string' name='GEO' ordinal='1' />
+                  <column datatype='string' name='DGUID' ordinal='2' />
+                  <column datatype='string' name='Selected causes of death' ordinal='3' />
+                  <column datatype='string' name='Sex' ordinal='4' />
+                  <column datatype='string' name='Change in life expectancy' ordinal='5' />
+                  <column datatype='string' name='UOM' ordinal='6' />
+                  <column datatype='integer' name='UOM_ID' ordinal='7' />
+                  <column datatype='string' name='SCALAR_FACTOR' ordinal='8' />
+                  <column datatype='integer' name='SCALAR_ID' ordinal='9' />
+                  <column datatype='string' name='VECTOR' ordinal='10' />
+                  <column datatype='string' name='COORDINATE' ordinal='11' />
+                  <column datatype='real' name='VALUE' ordinal='12' />
+                  <column datatype='string' name='STATUS' ordinal='13' />
+                  <column datatype='string' name='SYMBOL' ordinal='14' />
+                  <column datatype='string' name='TERMINATED' ordinal='15' />
+                  <column datatype='integer' name='DECIMALS' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Sales of Alcoholic Beverages' id='Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A'>
+            <properties context=''>
+              <relation connection='excel-direct.0japbyb0h9kpfx178m94b1ei34zl' name='Sales of Alcoholic Beverages' table='[&apos;Sales of Alcoholic Beverages$&apos;]' type='table'>
+                <columns gridOrigin='A1:P2713:no:A1:P2713:0' header='yes' outcome='6'>
+                  <column datatype='date' date-parse-format='yyyy' name='REF_DATE' ordinal='0' />
+                  <column datatype='string' name='GEO' ordinal='1' />
+                  <column datatype='string' name='DGUID' ordinal='2' />
+                  <column datatype='string' name='Type of sales' ordinal='3' />
+                  <column datatype='string' name='Type of beverage' ordinal='4' />
+                  <column datatype='string' name='UOM' ordinal='5' />
+                  <column datatype='integer' name='UOM_ID' ordinal='6' />
+                  <column datatype='string' name='SCALAR_FACTOR' ordinal='7' />
+                  <column datatype='integer' name='SCALAR_ID' ordinal='8' />
+                  <column datatype='string' name='VECTOR' ordinal='9' />
+                  <column datatype='string' name='COORDINATE' ordinal='10' />
+                  <column datatype='real' name='VALUE' ordinal='11' />
+                  <column datatype='string' name='STATUS' ordinal='12' />
+                  <column datatype='string' name='SYMBOL' ordinal='13' />
+                  <column datatype='string' name='TERMINATED' ordinal='14' />
+                  <column datatype='integer' name='DECIMALS' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[GEO]' />
+              <expression op='[GEO (Life Expectancy at Birth, by Se)]' />
+            </expression>
+            <first-end-point object-id='Sales of Alcoholic Beverages_E2C47B32BF4F4704BD79F1606098A67A' />
+            <second-end-point object-id='Life Expectancy at Birth, by Se_5FEFE9C5B1A74FE48ACE0D2F6A9FAADC' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Changes in Life Expectancy by Province'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Changes In Life Expectancy by Province 2011-2016</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sales of Alcoholic Beverages (Sales of Alcoholic Beverages by Volume)' name='federated.001wvgi1ab89oz1gi9lre0lr3a8w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.001wvgi1ab89oz1gi9lre0lr3a8w'>
+            <column caption='Provinces - Life Expectancy' datatype='string' name='[Calculation_920704687716417539]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [GEO (Life Expectancy at Birth, by Se) Set] THEN [GEO (Life Expectancy at Birth, by Se)]&#13;&#10;ELSE &apos;Northwest Territories with Nunavut&apos; END' />
+            </column>
+            <column caption='Period of Change' datatype='string' name='[Change in life expectancy]' role='dimension' type='nominal' />
+            <column caption='Location' datatype='string' name='[GEO (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='string' name='[REF_DATE (Life Expectancy at Birth, by Se)]' role='dimension' type='nominal' />
+            <column caption='Cause of Death' datatype='string' name='[Selected causes of death]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column caption='Change in Life Expectancy at Birth' datatype='real' name='[VALUE (Life Expectancy at Birth, by Se)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_920704687716417539]' derivation='None' name='[none:Calculation_920704687716417539:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Change in life expectancy]' derivation='None' name='[none:Change in life expectancy:nk]' pivot='key' type='nominal' />
+            <column-instance column='[REF_DATE (Life Expectancy at Birth, by Se)]' derivation='None' name='[none:REF_DATE (Life Expectancy at Birth, by Se):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Selected causes of death]' derivation='None' name='[none:Selected causes of death:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[VALUE (Life Expectancy at Birth, by Se)]' derivation='Sum' name='[sum:VALUE (Life Expectancy at Birth, by Se):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Calculation_920704687716417539:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Alberta&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;British Columbia&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Manitoba&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;New Brunswick&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Newfoundland and Labrador&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Northwest Territories with Nunavut&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Nova Scotia&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Ontario&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Prince Edward Island&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Quebec&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Saskatchewan&quot;' />
+              <groupfilter function='member' level='[none:Calculation_920704687716417539:nk]' member='&quot;Yukon&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Change in life expectancy:nk]'>
+            <groupfilter function='member' level='[none:Change in life expectancy:nk]' member='&quot;Over last five years&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:REF_DATE (Life Expectancy at Birth, by Se):nk]'>
+            <groupfilter function='member' level='[none:REF_DATE (Life Expectancy at Birth, by Se):nk]' member='&quot;2014/2016&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Selected causes of death:nk]'>
+            <groupfilter function='member' level='[none:Selected causes of death:nk]' member='&quot;Total, all causes of death [A00-Y89]&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Sex:nk]'>
+            <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Both sexes&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:REF_DATE (Life Expectancy at Birth, by Se):nk]</column>
+            <column>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Sex:nk]</column>
+            <column>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Selected causes of death:nk]</column>
+            <column>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Change in life expectancy:nk]</column>
+            <column>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Calculation_920704687716417539:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[sum:VALUE (Life Expectancy at Birth, by Se):qk]' scope='rows' value='Changes in Life Expectancy (years)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[sum:VALUE (Life Expectancy at Birth, by Se):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[sum:VALUE (Life Expectancy at Birth, by Se):qk]</rows>
+        <cols>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Calculation_920704687716417539:nk]</cols>
+      </table>
+      <simple-id uuid='{7F66B051-ED42-4B5F-8BC8-7CA16D757B4E}' />
+    </worksheet>
+    <worksheet name='Total Alcohol Sales by Volume (by Province)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Sales By Province 2011-2013</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sales of Alcoholic Beverages (Sales of Alcoholic Beverages by Volume)' name='federated.001wvgi1ab89oz1gi9lre0lr3a8w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.001wvgi1ab89oz1gi9lre0lr3a8w'>
+            <column caption='Provinces - Alcoholic Bevarage Sales' datatype='string' name='[GEO]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='date' name='[REF_DATE]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Type of sales]' role='dimension' type='nominal' />
+            <column caption='Value' datatype='real' name='[VALUE]' role='measure' type='quantitative' />
+            <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type of sales]' derivation='None' name='[none:Type of sales:nk]' pivot='key' type='nominal' />
+            <column-instance column='[VALUE]' derivation='Sum' name='[sum:VALUE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[REF_DATE]' derivation='Year' name='[yr:REF_DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:GEO:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Alberta&quot;' />
+              <groupfilter function='member' level='[none:GEO:nk]' member='&quot;British Columbia&quot;' />
+              <groupfilter from='&quot;Manitoba&quot;' function='range' level='[none:GEO:nk]' to='&quot;Yukon&quot;' />
+            </groupfilter>
+          </filter>
+          <alphabetic-sort column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:GEO:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Type of sales:nk]'>
+            <groupfilter function='member' level='[none:Type of sales:nk]' member='&quot;Total per capita sales&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[yr:REF_DATE:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:REF_DATE:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:REF_DATE:ok]' member='2012' />
+              <groupfilter function='member' level='[yr:REF_DATE:ok]' member='2013' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:GEO:nk]</column>
+            <column>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[yr:REF_DATE:ok]</column>
+            <column>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Type of sales:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[sum:VALUE:qk]' scope='rows' value='Total Sales Per Capita By Volume (Litres)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[sum:VALUE:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[sum:VALUE:qk]</rows>
+        <cols>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:GEO:nk]</cols>
+      </table>
+      <simple-id uuid='{2C7186A1-11D2-4D9D-A275-B2D2B8218606}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Alcohol Sales by Volume (by Province)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[sum:VALUE:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:GEO:nk]</field>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Type of sales:nk]</field>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[yr:REF_DATE:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{278F0EDD-89E4-49F0-B885-F99491ADEB52}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Changes in Life Expectancy by Province'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[sum:VALUE (Life Expectancy at Birth, by Se):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[GEO (Life Expectancy at Birth, by Se) Set]</field>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[io:GEO (Life Expectancy at Birth, by Se) Set:nk]</field>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Calculation_920704687716417539:nk]</field>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Change in life expectancy:nk]</field>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:GEO (Life Expectancy at Birth, by Se):nk]</field>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:REF_DATE (Life Expectancy at Birth, by Se):nk]</field>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Selected causes of death:nk]</field>
+            <field>[federated.001wvgi1ab89oz1gi9lre0lr3a8w].[none:Sex:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6E43E635-1B0F-49B8-A600-5C0DD4757BF9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Changes in Life Expectancy by Province' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Alcohol Sales by Volume (by Province)' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
